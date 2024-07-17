@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2dfeadaf3c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+
+  <header class="hero">
+
+    <nav class="nav container-body" id="nav">
+        <h2 class="nav__logo"><img src="./img/logo-gian-(1).png"></h2>
+
+        <ul class="nav__links">
+
+            <li class="nav__item">
+                <a href="#" class="nav__link">Promos</a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">Comida Rápida</a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">Servicio de viandas</a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">Acerca de</a>
+            </li>
+
+        </ul>
+
+        <a href="#nav" class="nav__hamburguer">
+            <img src="img/menu.svg" class="nav__icon">
+        </a>
+
+        <a href="#" class="nav__close">
+            <img src="img/close.svg" class="nav__icon">
+        </a>
+
+    </nav>
+    
+</header>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="slider-container">
+      <div class="slider">
+          <div class="slide">
+              <img src="img/slider1.webp" alt="Burger">
+              <div class="caption">Promo hamburguesas + empanadas</div>
+          </div>
+          <div class="slide">
+              <img src="img/slider2.jpg" alt="Pizza">
+              <div class="caption">Promo en pizza + hamburguesas</div>
+          </div>
+          <div class="slide">
+              <img src="img/64dffbe67ce83.png" alt="Fries">
+              <div class="caption">Servicio de viandas</div>
+          </div>
+      </div>
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+  </div>
+
+
+
+  <div class="container">
+    <h1>Comidas Rápidas</h1>
+    <ul id="menu">
+        <li>
+            <input type="checkbox" id="comida1" value="Muzza">
+            <label for="comida1">
+                <img src="./img/pizza.png" alt="Muzza">
+                Muzza <span class="price">$6000</span>
+                <div class="quantity">
+                    <button class="minus">-</button>
+                    <input type="number" value="0" min="0">
+                    <button class="plus">+</button>
+                </div>
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" id="comida2" value="Napolitana">
+            <label for="comida2">
+                <img src="./img/pizza.png" alt="Napolitana">
+                Napolitana <span class="price">$6500</span>
+                <div class="quantity">
+                    <button class="minus">-</button>
+                    <input type="number" value="0" min="0">
+                    <button class="plus">+</button>
+                </div>
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" id="comida3" value="EmpanadasCarne">
+            <label for="comida3">
+                <img src="./img/empanada.png" alt="EmpanadasCarne">
+                Doc de empanadas de carne <span class="price">$6000</span>
+                <div class="quantity">
+                    <button class="minus">-</button>
+                    <input type="number" value="0" min="0">
+                    <button class="plus">+</button>
+                </div>
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" id="comida4" value="EmpanadasPollo">
+            <label for="comida4">
+                <img src="./img/empanada.png" alt="EmpanadasPollo">
+                Doc de empanadas de pollo <span class="price">$6000</span>
+                <div class="quantity">
+                    <button class="minus">-</button>
+                    <input type="number" value="0" min="0">
+                    <button class="plus">+</button>
+                </div>
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" id="comida5" value="SandwichDeMila">
+            <label for="comida5">
+                <img src="./img/milanesa.png" alt="SandwichDeMila">
+                Sandwich de mila <span class="price">$4000</span>
+                <div class="quantity">
+                    <button class="minus">-</button>
+                    <input type="number" value="0" min="0">
+                    <button class="plus">+</button>
+                </div>
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" id="comida6" value="Fritas">
+            <label for="comida6">
+                <img src="./img/fritas.png" alt="Fritas">
+                Fritas <span class="price">$800</span>
+                <div class="quantity">
+                    <button class="minus">-</button>
+                    <input type="number" value="0" min="0">
+                    <button class="plus">+</button>
+                </div>
+            </label>
+        </li>
+    </ul>
+    <button id="sendOrder">Enviar Pedido</button>
+</div>
+
+
+  <div class="nav-bottom">
+    <div class="popup-whatsapp fadeIn">
+        <div class="content-whatsapp -top"><button type="button" class="closePopup">
+              <i class="material-icons icon-font-color">close</i>
+            </button>
+            <p>HOLA, 😊 Realiza tu pedido!!</p>
+        </div>
+        <div class="content-whatsapp -bottom">
+          <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+            <button class="send-msPopup" id="send-btn" type="button">
+                <i class="material-icons icon-font-color--black">send</i>
+            </button>
+
+        </div>
+    </div>
+    <button type="button" id="whats-openPopup" class="whatsapp-button">
+        <img class="icon-whatsapp" src="img/whatsapp-brands.svg">
+    </button>
+    <div class="circle-anime"></div>
+</div>
+
+<br>
+<br>
+
+<footer>
+    <div class="container-footer">
+        <p class="text-footer">&copy; Hecho por <span>emanuelFantin</span> 2024</p>
+    </div>
+</footer>
+
+
+
+
+
+
+  <script src="scripts.js"></script>
+
+
+
+
+</body>
+</html>
