@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header>
+
         <nav class="navbar">
             <div class="logo"><img src="img/logo.png" alt=""></div>
             <ul class="nav-links" id="navLinks">
@@ -58,63 +58,22 @@
             </div>
         </nav>
 
-    </header>
+        <header><h1 class="titulo">Congelados</h1></header>
 
 <main>
 
-    <section class="nosotros">
-        <h1>Bienvenido a nuestro sitio online de pedidos de comidas!</h1><br>
-        <p>Somos un emprendimiento familiar ubicado en la provincia de Formosa Capital , 
-            hacemos comidas preparadas para disfrutar y también congelados listos para cocinar en casa.</p><br>
-    <h2>Acá podés realizar pedidos:</h2><br>
-    <div>
-    <button href="comida-rapida.html">Comida Rapida</button>
-    <button href="congelados.html"> Congelados</button>
+    <div class="container">
+        <ul id="menu"></ul>
+        <button id="sendOrder">Enviar Pedido</button>
     </div>
-    </section>
-
-    <div class="slider-container">
-        <div class="slider">
-            <div class="slide">
-                <img src="img/pure.jfif" alt="PureDeTomates">
-                <div class="caption">Puré de Tomates Natural</div>
-            </div>
-            <div class="slide">
-                <img src="img/comida-rapida.jpg" alt="ComidaRapida">
-                <div class="caption">Comida Rápida</div>
-            </div>
-            <div class="slide">
-                <img src="img/IMG-20240808-WA0023.jpg" alt="MixVerduras">
-                <div class="caption">Mix de verduras congeladas listas para cocinar</div>
-            </div>
+    <div id="modal-confirmation" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <p id="modal-message"></p>
+            <button id="confirm-order">Confirmar</button>
         </div>
-        <button class="prev" onclick="prevSlide()">&#10094;</button>
-        <button class="next" onclick="nextSlide()">&#10095;</button>
     </div>
-
-    <div class="nav-bottom">
-        <div class="popup-whatsapp fadeIn">
-            <div class="content-whatsapp -top">
-                <button type="button" class="closePopup">
-                    <i class="material-icons icon-font-color">close</i>
-                </button>
-                <p>HOLA, 😊 Realiza tu pedido!!</p>
-            </div>
-            <div class="content-whatsapp -bottom">
-                <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
-                <button class="send-msPopup" id="send-btn" type="button">
-                    <i class="material-icons icon-font-color--black">send</i>
-                </button>
-            </div>
-        </div>
-        <button type="button" id="whats-openPopup" class="whatsapp-button">
-            <img class="icon-whatsapp" src="img/whatsapp-brands.svg">
-        </button>
-        <div class="circle-anime"></div>
-    </div>
-    <br>
-    <br>
-
+    
 </main>
 
     <footer>
@@ -122,10 +81,8 @@
             <p class="text-footer">&copy; Hecho por <span>emanuelFantin</span> 2024</p>
         </div>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="scripts-congelados.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lodash/lodash.min.js"></script>
-        
-
 </body>
 </html>

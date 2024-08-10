@@ -5,7 +5,6 @@ hamburger.addEventListener('click', function() {
     navLinks.classList.toggle('active');
 });
 
-
 // Banner Slider
 
 let currentSlide = 0;
@@ -48,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return response.json();
         })
         .then(data => {
-            const categoria = 'comida-rapida'; // Filtrar por categoría de comida rápida
+            const categoria = 'congelados'; // Filtrar por categoría de congelados
             const productosFiltrados = data.productos.filter(producto => producto.categoria === categoria);
             populateMenu(productosFiltrados);
         })
