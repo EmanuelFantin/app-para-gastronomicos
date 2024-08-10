@@ -230,14 +230,6 @@ height: 100vh;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
 }
 
-h1 {
-  margin-bottom: 25px;
-  color: #333;
-  font-weight: 800;
-  font-size: 2.5em;
-  animation: fadeIn 1s ease-in-out;
-}
-
 ul {
   list-style: none;
   padding: 0;
@@ -421,6 +413,11 @@ label img {
   color: #f7f7f7;
 }
 
+.nosotros a {
+  text-decoration: none;
+  color: white;
+}
+
 .nosotros button {
   background-color: #6ca123;
   color: #fff;
@@ -445,25 +442,33 @@ label img {
 
 /*Estilo del Footer*/
 
-footer{
-  background-color: black;
+/* Footer */
+footer {
+  background-color: #1f1f1f;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  position: relative;
+  bottom: 0;
   width: 100%;
 }
 
-footer p{
-  margin: 0;
-  padding: 12px;
-  color: rgb(255, 255, 255);
+.text-footer span {
+  color: #568d1b; 
+}
+.social-footer {
+  margin-top: 10px;
 }
 
-footer .container-footer{
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+.social-footer a {
+  color: #fff;
+  font-size: 25px;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
-.text-footer span{
-  color: #9dc934af;
+.social-footer a:hover {
+  color: #568d1b; 
 }
 
 /*MODAL DE WHATSAPP*/
